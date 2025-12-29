@@ -222,3 +222,24 @@ if __name__ == "__main__":
 - Python memory model (reference counting, garbage collection)
 - Performance implications of mutability
 - Python object model and method resolution order (MRO)
+
+
+## Common Interview Traps
+- **Mutable default arguments**  
+  Default mutable values (like lists or dicts) are created once and shared across function calls.
+- **Using `is` instead of `==`**  
+  `is` checks object identity, not value equality. Use `is` only for `None`, not for value comparison.
+- **Shallow vs deep copy confusion**  
+  Shallow copies share references to nested objects, leading to unexpected side effects.
+- **Assuming dict order in older Python versions**  
+  Dictionary insertion order is guaranteed only from Python 3.7 onwards.
+- **Catching broad exceptions (`except Exception`)**  
+  Masks bugs and makes debugging difficult. Always catch specific exceptions.
+- **Late binding in closures (lambdas in loops)**  
+  Loop variables are evaluated at call time, not definition time.
+- **Mutating collections while iterating**  
+  Modifying lists or dicts during iteration can cause runtime errors or logic bugs.
+- **Floating-point precision assumptions**  
+  Floating-point arithmetic is not exact; avoid direct equality checks.
+- **In-place mutation of function arguments**  
+  Modifying mutable arguments affects the caller’s data unexpectedly.
