@@ -1,7 +1,7 @@
 # Finding the largest number 
 # arr = [3, 7, 2, 9, 5] 
-import time 
-import random 
+# import time 
+# import random 
 
 # arr = [random.randint(1, 100000) for _ in range(10000)] 
 # arr = [random.randint(1, 100000) for _ in range(50000)] 
